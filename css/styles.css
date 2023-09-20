@@ -119,7 +119,7 @@ body{
   padding: 35px 25px 10px;
 }
 
-.ubicacion, .link{
+.ubicacion{
   display: flex;
   gap: 5px;
   align-items: center;
