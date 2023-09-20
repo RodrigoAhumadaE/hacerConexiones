@@ -309,8 +309,17 @@ form {
   gap: 15px;
 }
 
+#nombre {
+  width: 100%;
+}
+
 .mostrar {
   display: block;
+}
+
+.desenfocar {
+  filter: blur(2px);
+  opacity: 0.8;
 }
 
 #nombre {

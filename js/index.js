@@ -29,13 +29,16 @@ function agregarConexion(element){
 
 function mostrarModal(element){
   elementModal = document.querySelector('.modal');
+  elementContainer = document.querySelector('.content');
   elementModal.classList.add('mostrar');
+  elementContainer.classList.add('desenfocar');  
   document.querySelector('#nombre').value = "";
 }
 
 function ocultarModal(){
   elementModal = document.querySelector('.modal');
   elementModal.classList.remove('mostrar');
+  elementContainer.classList.remove('desenfocar');
 }
 
 function actualizarNombreUsuario(e){
