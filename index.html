@@ -39,7 +39,7 @@
               <h5>Developer | Engineer | Problem Solver</h5>
               <h5>Master of Shadows and the Internet</h5>
               <div class="link">
-                <a href="#" onclick="cambiarNombreUsuario(this)"><img src="./img/icons/gear.png" alt="icono engranaje" class="icon"> edit profile</a>
+                <a href="#" onclick="mostrarModal(this)"><img src="./img/icons/gear.png" alt="icono engranaje" class="icon"> edit profile</a>
               </div>
             </div>
           </div>
@@ -110,6 +110,20 @@
           </div>
         </div>
       </div>            
+    </div>
+    <div class="modal">
+      <div class="header-modal">
+        <h2>Editar Nombre Usuario</h2>
+      </div>
+      <div class="cuerpo-modal">
+        <form onsubmit="actualizarNombreUsuario(event)">
+          <div class="input-form">
+            <label for="nombre">Nuevo nombre de usuario:</label>
+            <input type="text" name="nombre" id="nombre" required>
+          </div>
+          <button class="btn" type="submit">Guardar</button>
+        </form>
+      </div>
     </div>
     <script src="./js/index.js"></script>
   </body>

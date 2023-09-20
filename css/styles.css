@@ -67,6 +67,10 @@ body{
   color: white;
 }
 
+.btn:hover {
+  background-color: #1d2372;
+}
+
 /* contenido de la página */
 .cuerpo-perfil{
   width: 70%;
@@ -266,4 +270,52 @@ body{
   border-right:#D0D0D0 solid 2px;
   border-bottom: #D0D0D0 solid 2px;
   padding: 10px 20px;
+}
+
+/* Modal Cambiar nombre de usuario */
+
+.modal {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  outline: #D0D0D0 solid 2px;
+  width: 38%;
+  height: auto;
+  flex-direction: column;
+  display: none;
+}
+
+.header-modal {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 2px 15px;
+  box-sizing: border-box;
+}
+
+.cuerpo-modal {
+  width: 100%;
+  background-color: white;
+}
+
+form {
+  display: flex;
+  padding: 20px 20px;
+  gap: 15px;
+}
+
+.input-form {
+  display: flex;
+  gap: 15px;
+}
+
+.mostrar {
+  display: block;
+}
+
+#nombre {
+  border: none;
+  background-color: aqua;
+  border-radius: 15px;
+  padding: 1px 2px 1px 10px;
 }

@@ -27,12 +27,36 @@ function agregarConexion(element){
   eliminarConexion(element);
 }
 
-function cambiarNombreUsuario(element){
-  let elementNombreUsuario = element.closest('.info-card').querySelector('.nombre-perfil');
-  let nombreUsuario = elementNombreUsuario.innerText;
-  if(nombreUsuario === 'Jane Doe'){
-    elementNombreUsuario.textContent = 'Annette Cardenas';
-  }else{
-    elementNombreUsuario.textContent = 'Jane Doe';
-  }
+function mostrarModal(element){
+  elementModal = document.querySelector('.modal');
+  elementModal.classList.add('mostrar');
+  document.querySelector('#nombre').value = "";
 }
+
+function ocultarModal(){
+  elementModal = document.querySelector('.modal');
+  elementModal.classList.remove('mostrar');
+}
+
+function actualizarNombreUsuario(e){
+  e.preventDefault();
+  let elementNombreUsuario = document.querySelector('.nombre-perfil');
+  let nombreUsuario = elementNombreUsuario.innerText;
+  let nuevoNombreUsuario = e.target.nombre.value;
+  if(nuevoNombreUsuario.trim() === ""){
+    elementNombreUsuario.textContent = nombreUsuario;
+  }else{
+    elementNombreUsuario.textContent = nuevoNombreUsuario;
+  }  
+  ocultarModal();
+}
+
+// function cambiarNombreUsuario(element){
+//   let elementNombreUsuario = element.closest('.info-card').querySelector('.nombre-perfil');
+//   let nombreUsuario = elementNombreUsuario.innerText;
+//   if(nombreUsuario === 'Jane Doe'){
+//     elementNombreUsuario.textContent = 'Annette Cardenas';
+//   }else{
+//     elementNombreUsuario.textContent = 'Jane Doe';
+//   }
+// }
