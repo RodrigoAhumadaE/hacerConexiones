@@ -1,0 +1,262 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Roboto;
+}
+
+.content{
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* barra navegación */
+.nav{
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 2px 0;
+}
+
+.nav-content{
+  width: 70%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.nav-title{
+  flex: 1;
+}
+
+.nav-links{
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+.nav-links a{
+  text-decoration: none;  
+  color: white;
+  padding: 0 10px;
+  font-size: 0.8em;
+}
+
+.nav-btn{
+  flex: 1;
+  display: flex;
+  justify-content: right;
+}
+
+.btn{
+  width: 70px;
+  height: 20px;
+  background-color: #8d93fe;
+  border: none;
+  color: white;
+}
+
+/* contenido de la página */
+.cuerpo-perfil{
+  width: 70%;
+  display: flex;
+  margin-top: 20px;
+}
+
+.informacion{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 20px;
+}
+
+
+.contactos{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* tarjeta usuario */
+.user_card{
+  width: 100%;
+  border: #D0D0D0 solid 2px;
+  box-sizing: border-box;
+}
+
+.header-card{
+  width: 100%;
+  height: 80px;
+  background-color: #8d93fe;
+  position: relative;
+}
+
+.user-img{
+  width: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+  left: 25px;
+  border: white solid 2px;
+  outline: #D0D0D0 solid 3px;
+}
+
+.info-card{
+  display: flex;
+  flex-direction: column;
+  padding: 35px 25px 10px;
+}
+
+.ubicacion, .link{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.link a{
+  font-size: 0.8em;
+}
+
+.icon{
+  width: 12px;
+}
+
+/* informacion educación */
+.education{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  border: #D0D0D0 solid 2px;
+  box-sizing: border-box;
+}
+
+.header-education{
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 2px 15px;
+  box-sizing: border-box;
+}
+
+.cuerpo-education{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 25px;
+}
+
+.inf{
+  padding: 2px 0;
+}
+
+.fecha{
+  color: #858585;
+}
+
+/* información contactos */
+.contactos-pendientes{
+  border: #D0D0D0 solid 2px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.header{
+  background-color: black;
+  color: white;
+  display: flex;
+  padding: 10px;
+  gap: 5px;
+  font-size: 0.7em;
+  align-items: center;
+}
+
+.num-contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 18px;
+  background-color: #858585;
+  border-radius: 50%;
+  margin-right: 5px;
+  padding: 0 6px;
+}
+
+.cuerpo{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.user-contact{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 5px;
+}
+
+.user{
+  flex: 2;
+  display: flex;
+  align-items: center;
+  margin: 3px 0;
+}
+
+.iconos{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.user-contact img, .contact img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+#icono{
+  width: 20px;
+  height: 20px;
+  margin-left: 2px;
+}
+
+.contactos-aceptados{
+  border: #D0D0D0 solid 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cuerpo{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+  margin: 3px;
+}
+
+
+.mas{
+  border-left: #D0D0D0 solid 2px;
+  border-right:#D0D0D0 solid 2px;
+  border-bottom: #D0D0D0 solid 2px;
+  padding: 10px 20px;
+}
