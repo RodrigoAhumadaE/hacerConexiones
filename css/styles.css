@@ -276,10 +276,10 @@ body{
 
 .modal {
   position: fixed;
-  top: 30%;
-  left: 30%;
+  top: 35%;
+  left: 25%;
   outline: #D0D0D0 solid 2px;
-  width: 38%;
+  width: 50%;
   height: auto;
   flex-direction: column;
   display: none;
@@ -300,16 +300,24 @@ body{
 
 form {
   display: flex;
+  justify-content: space-between;
   padding: 20px 20px;
-  gap: 15px;
 }
 
 .input-form {
+  flex: 3;
   display: flex;
   gap: 15px;
 }
 
+.boton {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
 #nombre {
+  /* width: 280px; */
   width: 100%;
 }
 
